@@ -9,6 +9,10 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
@@ -19,8 +23,16 @@
     <div class="page-wrapper">
       <!------- Header / Branding ------->
       <header class="site-header">
-        <img src="img/loreal-logo.png" alt="L'Oréal Logo" class="logo" />
-        <h1 class="site-title">Smart Routine &amp; Product Advisor</h1>
+        <div class="header-inner">
+          <img src="img/loreal-logo.png" alt="L'Oréal Logo" class="logo" />
+          <div class="title-wrap">
+            <h1 class="site-title">Smart Routine &amp; Product Advisor</h1>
+            <p class="tagline">
+              Personalized beauty routines crafted with confidence.
+            </p>
+          </div>
+        </div>
+        <div class="accent-line" aria-hidden="true"></div>
       </header>
 
       <!-- Category Filter -->
@@ -46,6 +58,9 @@
       <div class="selected-products">
         <h2>Selected Products</h2>
         <div id="selectedProductsList"></div>
+        <div class="selected-controls">
+          <button id="clearSelections" class="btn btn-ghost">Clear All</button>
+        </div>
         <button id="generateRoutine" class="generate-btn">
           <i class="fa-solid fa-wand-magic-sparkles"></i> Generate Routine
         </button>
